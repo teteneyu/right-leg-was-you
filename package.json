@@ -1,0 +1,27 @@
+{
+  "name": "right-leg-was-you",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "apps/client",
+    "apps/server",
+    "packages/shared"
+  ],
+  "scripts": {
+    "dev": "npm run build -w @right-leg/shared && concurrently -k -n server,client -c red,blue \"npm run dev -w @right-leg/server\" \"npm run dev -w @right-leg/client\"",
+    "build": "npm run build -w @right-leg/shared && npm run build -w @right-leg/server && npm run build -w @right-leg/client",
+    "start": "npm run start -w @right-leg/server",
+    "share": "node scripts/share-url.cjs",
+    "start:share": "npm run build && npm run share && npm run start",
+    "deploy:check": "npm run build && node scripts/check-deploy-readiness.cjs",
+    "tunnel": "npm exec --yes cloudflared -- tunnel --url http://localhost:4000",
+    "tunnel:localtunnel": "npm exec --yes localtunnel -- --port 4000",
+    "start:remote": "npm run build && concurrently -k -n server,tunnel -c blue,magenta \"npm run start\" \"npm run tunnel\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "concurrently": "^9.1.2",
+    "typescript": "^5.8.3"
+  }
+}

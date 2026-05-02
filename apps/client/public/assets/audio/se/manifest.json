@@ -1,0 +1,11 @@
+{
+  "warning": "/assets/audio/se/Warning-Siren05.mp3",
+  "suck": "/assets/audio/se/Vacuum_Cleaner04.mp3",
+  "hit": "/assets/audio/se/Motion-Slam06.mp3",
+  "robotHit": "/assets/audio/se/Hit-Punch02.mp3",
+  "fall": "/assets/audio/se/Motion-Slam06.mp3",
+  "victory": "/assets/audio/se/Victory.mp3",
+  "trashBreak": "/assets/audio/se/Motion-Slam06(Light).mp3",
+  "star": "/assets/audio/se/star.mp3",
+  "heal": "/assets/audio/se/heal.mp3"
+}

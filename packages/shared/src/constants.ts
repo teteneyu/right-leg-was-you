@@ -1,0 +1,60 @@
+export const GAME_CONFIG = {
+  tickRate: 20,
+  stateBroadcastRate: 15,
+  inputSendRate: 20,
+  gameDurationMs: 60_000,
+  bossMaxHp: 300,
+  robotMaxHp: 100,
+  fallGaugeMax: 100,
+  warningAngleDeg: 15,
+  dangerAngleDeg: 25,
+  criticalAngleDeg: 40,
+  punchDamage: 6,
+  kickDamage: 12,
+  kickMissTiltPenalty: 8,
+  guardReduction: 0.65,
+  bracePower: 0.8,
+  armBalancePower: 0.65,
+  balanceRecoveryRate: 0.02,
+  vulnerableDurationMs: 2500,
+  bossTellDurationMs: 1200,
+  robotDownMs: 2400,
+  downDamageMultiplier: 1.65,
+  walkSpeed: 145,
+  spinChargeDegPerSec: 620,
+  spinAttackMinChargeDeg: 280,
+  spinAttackMaxBonusChargeDeg: 900,
+  armSpinDamageMultiplier: 1.35,
+  legSpinDamageMultiplier: 1.45,
+  airAttackDamageMultiplier: 1.45,
+  jumpVelocity: 510,
+  gravity: 1180,
+  jumpCooldownMs: 620,
+  downMashRecoverMs: 260,
+  playerAttackCloseRange: 330,
+  playerAttackMaxRange: 470,
+  bossSuckRange: 650,
+  bossChargeRange: 420,
+  bossTrashRange: 560,
+  bossMinX: 650,
+  bossMaxX: 955
+} as const;
+
+export const ROLE_LABELS: Record<string, string> = {
+  all: '全パーツ担当',
+  leftLeg: '画面左の足',
+  rightLeg: '画面右の足',
+  leftArm: '画面左の腕',
+  rightArm: '画面右の腕',
+  leftSide: '画面左側',
+  rightSide: '画面右側',
+  arms: '両腕担当',
+  spectator: '見学'
+};
+
+export const MOVE_LABELS: Record<string, string> = {
+  suck: '吸い込み注意',
+  charge: '突進注意',
+  trashShot: 'ゴミ噴射注意',
+  weakPoint: '弱点むき出し'
+};
