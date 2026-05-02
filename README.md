@@ -97,7 +97,7 @@ npm.cmd run dev
 
 `render.yaml` を使う想定です。
 
-- Build Command: `npm ci && npm run build`
+- Build Command: `npm ci --include=dev && npm run build`
 - Start Command: `npm run start`
 - Node: 24
 - Health Check: `/health`

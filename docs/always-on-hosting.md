@@ -11,7 +11,7 @@
 - Hosting: Render Web Service
 - Region: Singapore
 - Runtime: Node.js
-- Build Command: `npm ci && npm run build`
+- Build Command: `npm ci --include=dev && npm run build`
 - Start Command: `npm run start`
 - Health Check Path: `/health`
 
