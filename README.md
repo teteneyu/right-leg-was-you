@@ -3,6 +3,8 @@
 友人と通話しながら遊ぶ、リアルタイム協力ボス戦バカゲーのMVPです。  
 全員で1体の段ボール工作ロボを操作し、暴走掃除機ボス「スイトルンバMk.0」を倒します。
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/teteneyu/right-leg-was-you)
+
 ## 現在の実装
 
 - React + Vite + Canvas 2D のクライアント

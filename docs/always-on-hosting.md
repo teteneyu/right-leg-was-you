@@ -51,6 +51,10 @@ npm.cmd run deploy:check
 
 ## デプロイ手順
 
+最短で試す場合は、GitHub READMEの `Deploy to Render` ボタン、または次のURLを開きます。
+
+https://render.com/deploy?repo=https://github.com/teteneyu/right-leg-was-you
+
 1. このプロジェクトをGitHubにpushします。
 2. RenderでNew BlueprintまたはNew Web Serviceを作成します。
 3. GitHubリポジトリを接続します。
